@@ -571,7 +571,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #090808 !important;
+  color: var(--grey) !important;
 }
 
 /* .teal-text {
