@@ -1,0 +1,4 @@
+ORANGE: e7530b  rgba(231,83,11,255)   
+WHITE:  f6eeea  rgba(246,238,234,255)
+dark GREY:   433e3e
+light GREY:   433e3e
