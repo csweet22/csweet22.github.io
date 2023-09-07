@@ -60,6 +60,10 @@
   margin: 4px;
 }
 
+.icon-btn:focus {
+  background-color: var(--white);
+}
+
 .github {
   color: var(--grey);
 }
