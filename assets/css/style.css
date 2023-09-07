@@ -334,7 +334,10 @@ h3 {
 } */
 
 #intro.section {
-  background: var(--orange) repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/cole_fullshot.png');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   position: relative;
 }
 
