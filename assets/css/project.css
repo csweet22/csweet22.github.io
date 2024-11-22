@@ -699,13 +699,13 @@ small {
     color: var(--lgrey) !important;
 }
 
-/* main .teal-text */
+/* main .primary-text */
 
-.teal-text {
+.primary-text {
     color: var(--grey) !important;
 }
 
-/* .teal-text {
+/* .primary-text {
     color: #0b5e86 !important;
   } */
 

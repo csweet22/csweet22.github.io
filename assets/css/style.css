@@ -130,27 +130,20 @@ ul.side-nav.fixed li.logo {
   padding: 30px 30px 40px;
 }
 
-ul.side-nav.fixed li.logo a {
-  font-weight: 200;
-  line-height: 100%;
-}
-
+/* Format for active section */
 ul.table-of-contents li:not(.logo) a.active,
 ul.table-of-contents li:not(.logo) a:hover {
   background-color: var(--white);
   border-left: 3px solid;
 }
 
+/* Navbar text override */
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
 ul#slide-out li:not(.logo) a span {
   color: var(--grey) !important;
 }
 
-li.logo span {
-  display: block;
-  font-size: 14px;
-}
-
+/* TITLE positioning */
 .brand-logo h1 {
   font-size: inherit;
   line-height: inherit;
@@ -158,6 +151,7 @@ li.logo span {
   font-weight: inherit;
 }
 
+/* Main area sizing */
 .container {
   width: 95%;
 }
@@ -180,13 +174,6 @@ h3 {
   height: 100vh;
 }
 
-/* Original */
-
-/* #intro.section {
-  background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
-  position: relative;
-} */
-
 #intro.section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/cole_fullshot.png');
   object-fit: cover;
@@ -204,42 +191,12 @@ h3 {
   top: 0;
 }
 
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
-
 #intro.section .container *:not(span) {
   font-weight: 300;
   /* font-weight: 400; */
   line-height: 150%;
   /* padding: 0 0px; */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-#intro.section .underline {
-  border-bottom: 5px solid #623013;
-}
-
-#intro.section .teal {
-  padding: 0 10px;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.waves-effect.waves-blue .waves-ripple {
-  /* The alpha value allows the text and background color
-   of the button to still show through. */
-  background-color: rgba(243, 145, 33, 0.2);
 }
 
 .card {
@@ -338,12 +295,6 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
-/* main a.hoverline */
-
-/* a.hoverline:hover {
-  border-bottom: 3px solid #24305e !important;
-} */
-
 a.hoverline:hover {
   border-bottom: 3px solid var(--orange) !important;
 }
@@ -404,12 +355,6 @@ a.hoverline:hover {
   text-align: center;
 }
 
-.fa-external-link:before {
-  left: 3px;
-  position: relative;
-  top: 2px;
-}
-
 small {
   display: none;
 }
@@ -418,25 +363,13 @@ small {
   color: var(--lgrey) !important;
 }
 
-/* main .teal-text */
-
-.teal-text {
+.primary-text {
   color: var(--orange) !important;
 }
 
-/* .teal-text {
-  color: #0b5e86 !important;
-} */
-
-/* .teal */
-
-.teal {
+.primary-bg {
   background-color: var(--orange) !important;
 }
-
-/* .teal {
-  background-color: #00695c !important;
-} */
 
 @media (min-width: 1200px) {
   #experience .container {
