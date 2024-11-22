@@ -8,10 +8,12 @@
   --lmagenta: #f47cc4;
   --lorange: #f79c63;
   --black: #0F0F0F;
-  --white: #eaeff6;
+  --dgrey: #1f1f1f;
+  --white: #f6f5ea;
   --grey: #43423e;
   --lgrey: #50504e;
-  --navbar_bg_color: var(--grey);
+  --navbar_bg_color: var(--black);
+  --navbar_bg_color_active: var(--dgrey);
   --navbar_text_color: var(--white);
   --light_text: var(--white);
   --dark_text: var(--grey);
@@ -98,6 +100,10 @@ nav i {
   margin: 0 0 0 0;
 }
 
+.main-nav-item{
+  padding-left: 50px !important;
+  background-color: var(--navbar_bg_color) !important;
+}
 
 .readme {
   position: relative;
@@ -157,8 +163,12 @@ ul.side-nav.fixed li.logo {
 /* Format for active section */
 ul.table-of-contents li:not(.logo) a.active,
 ul.table-of-contents li:not(.logo) a:hover {
-  background-color: var(--navbar_bg_color);
-  border-left: 3px solid;
+  background-color: var(--navbar_bg_color_active);
+  border-left: 5px solid;
+  border-radius: 2px 10px 10px 2px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 /* Navbar text override */
