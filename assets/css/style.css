@@ -32,6 +32,7 @@
   --white: #f6eeea;
   --grey: #433e3e;
   --lgrey: #504e4e;
+  --navbar_color: var(--white);
 }
 
 .profile-pic {
@@ -263,6 +264,7 @@ dt {
 
 ul.side-nav {
   width: var(--navbar_size);
+  background-color: var(--navbar_color);
 }
 
 ul.side-nav li {
