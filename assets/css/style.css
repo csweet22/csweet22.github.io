@@ -4,13 +4,19 @@
 :root {
   --navbar_size: 400px;
   --orange: #e7530b;
+  --magenta: #e8058a;
+  --lmagenta: #f47cc4;
   --lorange: #f79c63;
-  --white: #f6eeea;
-  --grey: #433e3e;
-  --lgrey: #504e4e;
-  --navbar_color: var(--white);
+  --black: #0F0F0F;
+  --white: #eaeff6;
+  --grey: #43423e;
+  --lgrey: #50504e;
+  --navbar_bg_color: var(--grey);
+  --navbar_text_color: var(--white);
   --light_text: var(--white);
   --dark_text: var(--grey);
+  --primary-color: var(--magenta);
+  --primary_bg: var(--black);
 }
 
 .white-text {
@@ -22,20 +28,21 @@
 }
 
 .primary-text {
-  color: var(--orange) !important;
+  color: var(--primary-color) !important;
 }
 
 .primary-bg {
-  background-color: var(--orange) !important;
+  background-color: var(--primary-color) !important;
 }
 
 body {
   color: var(--grey);
+  background-color: var(--primary_bg);
   font-size: 18px;
 }
 
 a {
-  color: var(--orange);
+  color: var(--primary-color);
 }
 
 main {
@@ -43,8 +50,8 @@ main {
 }
 
 blockquote {
-  border-left: 5px solid var(--orange);
-  color: var(--orange);
+  border-left: 5px solid var(--primary-color);
+  color: var(--primary-color);
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -82,7 +89,7 @@ nav i {
 
 .like-name {
   font-size: 1.1rem;
-  color: var(--orange);
+  color: var(--primary-color);
 }
 
 .like-title {
@@ -123,7 +130,7 @@ nav i {
 
 ul.side-nav {
   width: var(--navbar_size);
-  background-color: var(--navbar_color);
+  background-color: var(--navbar_bg_color);
 }
 
 ul.side-nav li {
@@ -132,7 +139,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: var(--orange);
+  color: var(--primary-color);
   border: none;
   display: block;
   line-height: 100%;
@@ -140,8 +147,8 @@ ul.side-nav.fixed a {
 }
 
 ul.side-nav.fixed li.logo {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--white);
+  background-color: var(--navbar_bg_color);
+  border-bottom: 1px solid var(--navbar_bg_color);
   box-sizing: content-box;
   min-height: 90px;
   padding: 30px 30px 40px;
@@ -150,14 +157,14 @@ ul.side-nav.fixed li.logo {
 /* Format for active section */
 ul.table-of-contents li:not(.logo) a.active,
 ul.table-of-contents li:not(.logo) a:hover {
-  background-color: var(--white);
+  background-color: var(--navbar_bg_color);
   border-left: 3px solid;
 }
 
 /* Navbar text override */
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
 ul#slide-out li:not(.logo) a span {
-  color: var(--grey) !important;
+  color: var(--navbar_text_color) !important;
 }
 
 /* TITLE positioning */
@@ -230,7 +237,7 @@ h3 {
 .card li a {
   margin-right: 0;
   color: var(--grey);
-  border-bottom: 2px solid #ffab40;
+  border-bottom: 2px solid var(--lmagenta);
 }
 
 .card li a:hover {
@@ -272,9 +279,13 @@ h3 {
   max-height: 60px;
 }
 
+#license {
+  color: var(--lmagenta);
+}
+
 .card-action span {
   font-size: 85%;
-  color: #666;
+  color: var(--lgrey);
 }
 
 .card ul {
@@ -304,6 +315,11 @@ h3 {
   margin-left: 10px;
 }
 
+.card a {
+  color: var(--lmagenta);
+ }
+
+
 a.hoverline {
   border-bottom: 3px solid transparent !important;
   padding: 3px 3px 0 3px;
@@ -313,7 +329,7 @@ a.hoverline {
 }
 
 a.hoverline:hover {
-  border-bottom: 3px solid var(--orange) !important;
+  border-bottom: 3px solid var(--primary-color) !important;
 }
 
 #skills .card.large {
@@ -416,7 +432,7 @@ small {
 
   nav a.button-collapse,
   nav a.button-collapse i {
-    color: var(--orange);
+    color: var(--primary-color);
     height: 56px;
     line-height: 56px;
   }
