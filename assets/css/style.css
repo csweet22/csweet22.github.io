@@ -26,6 +26,7 @@
 }
 
 :root {
+  --navbar_size: 400px;
   --orange: #e7530b;
   --lorange: #f79c63;
   --white: #f6eeea;
@@ -241,8 +242,8 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
+  /* background: url(../../assets/img/bg.png) repeat; */
+  padding-left: var(--navbar_size);
 }
 
 dl {
@@ -261,7 +262,7 @@ dt {
 }
 
 ul.side-nav {
-  width: 190px;
+  width: var(--navbar_size);
 }
 
 ul.side-nav li {
