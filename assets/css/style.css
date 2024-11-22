@@ -1,5 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
+
+:root {
+  --navbar_size: 400px;
+  --orange: #e7530b;
+  --lorange: #f79c63;
+  --white: #f6eeea;
+  --grey: #433e3e;
+  --lgrey: #504e4e;
+  --navbar_color: var(--white);
+  --light_text: var(--white);
+  --dark_text: var(--grey);
+}
+
+.white-text {
+  color: var(--white) !important;
+}
+
+.grey-text {
+  color: var(--lgrey) !important;
+}
+
+.primary-text {
+  color: var(--orange) !important;
+}
+
+.primary-bg {
+  background-color: var(--orange) !important;
+}
+
 body {
   color: var(--grey);
   font-size: 18px;
@@ -60,18 +89,6 @@ nav i {
   color: var(--white);
   font-size: 1.4rem;
   margin: 0 0 0 0;
-}
-
-:root {
-  --navbar_size: 400px;
-  --orange: #e7530b;
-  --lorange: #f79c63;
-  --white: #f6eeea;
-  --grey: #433e3e;
-  --lgrey: #504e4e;
-  --navbar_color: var(--white);
-  --light_text: var(--white);
-  --dark_text: var(--grey);
 }
 
 
@@ -357,18 +374,6 @@ a.hoverline:hover {
 
 small {
   display: none;
-}
-
-.grey-text {
-  color: var(--lgrey) !important;
-}
-
-.primary-text {
-  color: var(--orange) !important;
-}
-
-.primary-bg {
-  background-color: var(--orange) !important;
 }
 
 @media (min-width: 1200px) {
